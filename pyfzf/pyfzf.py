@@ -42,7 +42,7 @@ class FzfPrompt:
             self.executable_path = "fzf"
 
     def prompt(
-        self, choices: list[Any], fzf_options: str = "", delimiter="\n"
+        self, choices: list[Any], fzf_options: str = "", delimiter: str = "\n"
     ) -> list[str]:
         # convert a list to a string [ 1, 2, 3 ] => "1\n2\n3"
         choices_str = delimiter.join(map(str, choices))
